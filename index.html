@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/aa.css"> 
+
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+    <!-- bootstrap-dropdown-hover CSS -->
+    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- bootstrap-dropdown-hover JS -->
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+    
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+<style>
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.div1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 40%;
+  height: 350px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+</style>
+    
+   </head>
+<body>
+
+<div class="topbar"> Online Banking </div>
+<div class="secondbar"> Hello</div>
+
+  <nav class="navbar navbar-material-blue" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-animations">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">Net Banking</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-animations" data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Customer <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">New User</a></li>
+                  
+                  <li><a href="display.php">Display</a></li>
+                 
+                  <li class="divider"></li>
+                   </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Transcation <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="display.php">Money transfer</a></li>
+                  <li><a href="#">Display Account</a></li>
+                  </ul>
+              </li>
+             
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav> 
+<div style="background-image:url('images/b.jpg');background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+height:100vh;">
+<div class="div1">
+<form method="post" action="insert.php">
+  <label for="fname">Name:</label>
+  <input type="text" name="uname" placeholder="Enter user Name."><br>
+    <label for="emailid">Emailid:</label>
+  <input type="text" name="emailid" placeholder="Enter Email id"><br>
+ <label for="balance">Balance:</label>
+  <input type="text" name="balance" placeholder="Enter Balance"><br>
+   <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+
+</form> <br>
+</div>
+</div>	
+</body>
+</html>
